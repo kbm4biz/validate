@@ -84,7 +84,7 @@
                 const userNumber = document.getElementById('numberInput').value.trim();
 
                 if (validNumbers.includes(userNumber)) {
-                    window.location.href = 'https://google.com'; // استبدل هذا بالرابط المطلوب
+                    window.location.href = 'https://forms.office.com/r/rqYY6JiJ9D'; // استبدل هذا بالرابط المطلوب
                 } else {
                     document.getElementById('errorMessage').innerText = 'عذراً، غير مصرح لك بالتسجيل.';
                 }
@@ -99,10 +99,10 @@
 </head>
 <body>
     <div class="container">
-        <h1> التحقق من الرقم التدريبي </h1>
+        <h1> التحقق من احقية تسجيل  مقرر التدريب التعاوني للفصل القادم </h1>
         <form onsubmit="event.preventDefault(); validateNumber();">
             <label for="numberInput"> ادخل رقمك التدريبي :</label>
-            <input type="text" id="numberInput" placeholder="مثال: 123456" required>
+            <input type="text" id="numberInput" placeholder="مثال: 4404543321" required>
             <button type="submit">تقديم</button>
         </form>
         <p id="errorMessage"></p>
