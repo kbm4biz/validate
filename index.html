@@ -2,18 +2,13 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title> التحقق من الرقم التدريبي</title>
+    <title>التحقق من الرقم التدريبي</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
     <style>
-@font-face {
-    font-family: 'Cairo';
-    src: url('https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIhqk5AWQBQ.woff2') format('woff2'),
-         url('https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIhqk5AQQBQ.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
         body {
             font-family: 'Cairo', Arial, sans-serif;
             background-color: #f5f5f5;
@@ -55,7 +50,7 @@
             box-sizing: border-box;
         }
         button {
-            font-family: 'cairo', sans-serif;
+            font-family: 'Cairo', sans-serif;
             width: 100%;
             padding: 12px 15px;
             background-color: #007BFF;
@@ -115,10 +110,10 @@
 </head>
 <body>
     <div class="container">
-        <h1> التحقق من اهلية تسجيل  مقرر التدريب التعاوني للفصل القادم </h1>
-        <h2> خاص بقسم تقنية الاعمال-كلية حائل-بنين </h2>
+        <h1>التحقق من أهلية تسجيل مقرر التدريب التعاوني للفصل القادم</h1>
+        <h2>خاص بقسم تقنية الأعمال - كلية حائل - بنين</h2>
         <form onsubmit="event.preventDefault(); validateNumber();">
-            <label for="numberInput"> ادخل رقمك التدريبي :</label>
+            <label for="numberInput">ادخل رقمك التدريبي:</label>
             <input type="text" id="numberInput" placeholder="مثال: 4404543321" required>
             <button type="submit">تقديم</button>
         </form>
