@@ -5,8 +5,17 @@
     <title> التحقق من الرقم التدريبي</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+@font-face {
+    font-family: 'Cairo';
+    src: url('https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIhqk5AWQBQ.woff2') format('woff2'),
+         url('https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIhqk5AQQBQ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
         body {
-            font-family: 'cairo', sans-serif;
+            font-family: 'Cairo', Arial, sans-serif;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
@@ -29,7 +38,7 @@
             text-align: center;
             margin-bottom: 20px;
             font-size: 16px;
-            color: blue;
+            color: yellow;
         }
         label {
             display: block;
@@ -93,7 +102,7 @@
                 if (validNumbers.includes(userNumber)) {
                     window.location.href = 'https://forms.office.com/r/rqYY6JiJ9D'; // استبدل هذا بالرابط المطلوب
                 } else {
-                    document.getElementById('errorMessage').innerText = 'عذراً، غير مصرح لك بالتسجيل.';
+                    document.getElementById('errorMessage').innerText = 'عذراً، غير مؤهل لتسجيل التدريب التعاوني الفصل القادم.';
                 }
             } catch (error) {
                 console.error('Error:', error);
@@ -106,7 +115,7 @@
 </head>
 <body>
     <div class="container">
-        <h1> التحقق من احقية تسجيل  مقرر التدريب التعاوني للفصل القادم </h1>
+        <h1> التحقق من اهلية تسجيل  مقرر التدريب التعاوني للفصل القادم </h1>
         <h2> خاص بقسم تقنية الاعمال-كلية حائل-بنين </h2>
         <form onsubmit="event.preventDefault(); validateNumber();">
             <label for="numberInput"> ادخل رقمك التدريبي :</label>
